@@ -11,8 +11,9 @@
 				{
 					"listen": "test",
 					"script": {
+						"id": "88eb324c-6838-4c1c-83b6-558d9fde032b",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.test(\"Status code is 200 - Soso\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
@@ -24,19 +25,18 @@
 							"});"
 						],
 						"type": "text/javascript",
-						"packages": {},
-						"id": "88eb324c-6838-4c1c-83b6-558d9fde032b"
+						"packages": {}
 					}
 				},
 				{
 					"listen": "prerequest",
 					"script": {
+						"id": "cbbd5148-30fc-4caf-a052-a3601fd888e7",
 						"exec": [
 							"//newman run Example.postman_collection.json -r htmlextra"
 						],
 						"type": "text/javascript",
-						"packages": {},
-						"id": "cbbd5148-30fc-4caf-a052-a3601fd888e7"
+						"packages": {}
 					}
 				}
 			],
@@ -57,8 +57,9 @@
 				{
 					"listen": "test",
 					"script": {
+						"id": "de76f314-a7c0-4404-af9d-dea18f81e214",
 						"exec": [
-							"pm.test(\"Status code is 201\", function () {\r",
+							"pm.test(\"Status code is 201 - Soso\", function () {\r",
 							"    pm.response.to.have.status(201);\r",
 							"});\r",
 							"\r",
@@ -70,8 +71,7 @@
 							"});"
 						],
 						"type": "text/javascript",
-						"packages": {},
-						"id": "de76f314-a7c0-4404-af9d-dea18f81e214"
+						"packages": {}
 					}
 				}
 			],
@@ -101,14 +101,14 @@
 				{
 					"listen": "test",
 					"script": {
+						"id": "59a9904d-b745-4081-b871-c6bd48e4252c",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.test(\"Status code is 200 - Soso\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript",
-						"packages": {},
-						"id": "59a9904d-b745-4081-b871-c6bd48e4252c"
+						"packages": {}
 					}
 				}
 			],
@@ -138,14 +138,14 @@
 				{
 					"listen": "test",
 					"script": {
+						"id": "70bba596-1b1c-4a45-a4a0-af9061fca498",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.test(\"Status code is 200 - Soso\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});"
 						],
 						"type": "text/javascript",
-						"packages": {},
-						"id": "70bba596-1b1c-4a45-a4a0-af9061fca498"
+						"packages": {}
 					}
 				}
 			],
