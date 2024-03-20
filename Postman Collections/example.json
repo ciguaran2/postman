@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "4fa8c119-6c1e-4d30-aaac-9dab6f5b5351",
+		"name": "Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetMethod",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"The response has all properties\", () => {\r",
+							"    //parse the response JSON and test three properties\r",
+							"    const responseJson = pm.response.json();\r",
+							"    pm.expect(responseJson.userId).to.eql(1);\r",
+							"    pm.expect(responseJson.title).to.eql('sunt aut facere repellat provident occaecati excepturi optio reprehenderit');\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"id": "88eb324c-6838-4c1c-83b6-558d9fde032b"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"//newman run Example.postman_collection.json -r htmlextra"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"id": "cbbd5148-30fc-4caf-a052-a3601fd888e7"
+					}
+				}
+			],
+			"id": "7cb673ce-9d5a-4faa-bb18-f5dee723c3c5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://jsonplaceholder.typicode.com/posts/1"
+			},
+			"response": []
+		},
+		{
+			"name": "PostMethod",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"The response has all properties\", () => {\r",
+							"    //parse the response JSON and test three properties\r",
+							"    const responseJson = pm.response.json();\r",
+							"    pm.expect(responseJson.userId).to.eql(1);\r",
+							"    pm.expect(responseJson.title).to.eql('This is a test');\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"id": "de76f314-a7c0-4404-af9d-dea18f81e214"
+					}
+				}
+			],
+			"id": "58f338ad-0fcd-4baf-b40d-54be3ffb2fac",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"This is a test\",\r\n    \"body\": \"This is the body\",\r\n    \"userId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://jsonplaceholder.typicode.com/posts/"
+			},
+			"response": []
+		},
+		{
+			"name": "PutMethod",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"id": "59a9904d-b745-4081-b871-c6bd48e4252c"
+					}
+				}
+			],
+			"id": "717819e8-394b-4b6a-a25c-fbc4a5cee2ad",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"This is a test UPDATED\",\r\n    \"body\": \"This is the body UPDATED\",\r\n    \"userId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://jsonplaceholder.typicode.com/posts/1"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteMethod",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"id": "70bba596-1b1c-4a45-a4a0-af9061fca498"
+					}
+				}
+			],
+			"id": "40e46880-fd23-4a1a-b9b1-ac9627c77357",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://jsonplaceholder.typicode.com/posts/1"
+			},
+			"response": []
+		}
+	]
+}
