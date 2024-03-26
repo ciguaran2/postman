@@ -13,7 +13,7 @@
 					"script": {
 						"id": "88eb324c-6838-4c1c-83b6-558d9fde032b",
 						"exec": [
-							"pm.test(\"Status code is 200 - Soso v2\", function () {\r",
+							"pm.test(\"Status code is 200 - Soso v2 v2.2\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
@@ -59,7 +59,7 @@
 					"script": {
 						"id": "de76f314-a7c0-4404-af9d-dea18f81e214",
 						"exec": [
-							"pm.test(\"Status code is 201 - Soso\", function () {\r",
+							"pm.test(\"Status code is 201 - Soso v2.2\", function () {\r",
 							"    pm.response.to.have.status(201);\r",
 							"});\r",
 							"\r",
@@ -103,7 +103,7 @@
 					"script": {
 						"id": "59a9904d-b745-4081-b871-c6bd48e4252c",
 						"exec": [
-							"pm.test(\"Status code is 200 - Soso\", function () {\r",
+							"pm.test(\"Status code is 200 - Soso v2.2\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});"
 						],
@@ -140,7 +140,7 @@
 					"script": {
 						"id": "70bba596-1b1c-4a45-a4a0-af9061fca498",
 						"exec": [
-							"pm.test(\"Status code is 200 - Soso\", function () {\r",
+							"pm.test(\"Status code is 200 - Soso v2.2\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});"
 						],
